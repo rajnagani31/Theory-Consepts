@@ -13,11 +13,30 @@ Normal forms is inportent for ensuring that data is structured logically,reducin
 
 ## Type of normal Form
 
-### 1NF
+### 1NF (one normal form)
 
-you might me stord student coures selection student 1 select Three courses and show in course coulmans ,it's not clear structur
+user order many items in one teble(dining table) they data stord always add single row like 
+    1NF
+    1  raj  supp
+    2  raj  dosa
+    3  raj  idly
+    4  keshave panipri
+    4 keshave vadapave
 
-use creat structur create sepreate table for Course or use foreignkey
+    they spreat data and transfer into esy way
+
+    NoN-1NF
+    1 raj  supp,dosa,idly
+    2 keshave panipri,vadapave
+
+    this way not good alway order stord in database..
+
+- use a foreignkey 
+-  Each row is unique and can be identified by a primary key.
+
+- All entries are atomic—no lists or nested records.
+
+
 
 
 
