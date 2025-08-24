@@ -37,6 +37,17 @@ user order many items in one teble(dining table) they data stord always add sing
 - All entries are atomic—no lists or nested records.
 
 
+### 2NF (Two normal form)
 
+It is already in 1NF (no repeating groups, all values are atomic).
 
+    Partial dependencies exist:
+
+    StudentName depends only on StudentID (not CourseID).
+
+    CourseName and Instructor depend only on CourseID.
+
+some attributes depend only on part of thet key insted of the hole key
+
+Your table has a composite primary key (more than one column forms the primary key).
 
