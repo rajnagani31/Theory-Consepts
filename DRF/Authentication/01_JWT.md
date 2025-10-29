@@ -1,6 +1,6 @@
 # JWT (Json Web token)
 
-They Junreat Two key Public(They avaliable and share publicly) and Privet (They not avaliable in public and they not shard)
+They gunreat Two key Public(They avaliable and share publicly) and Privet (They not avaliable in public and they not shard)
 
 # state less and state full (they use many place)
 

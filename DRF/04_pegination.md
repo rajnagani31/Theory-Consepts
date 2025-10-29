@@ -21,10 +21,12 @@ DRF provide Three built in pagination style
     this pagination will work with limit and off set
 
     limit = how many result you want (page size)
-    offset = how many result to skip before startting
+
+    offset = how many result to skip after startting
 
     exmple : 
         you have 100 users in database and you request with limit=10&offset=20
-        the API will return 10 users from th starting 21stuser (becuse offset skip 20 records)
+
+        the API will return 10 users from the starting 21stuser (becuse offset skip 20 records)
 
 3. CursorPagination

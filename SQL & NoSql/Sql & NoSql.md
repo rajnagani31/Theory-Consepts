@@ -11,7 +11,7 @@
 
 #### SQL databases are primarily called Relational Databases (RDBMS)
 <!-- # SQL relational Database  -->
-
+# Vertical 
 ####     It's Vertical Scaling(scale up ) means Increase resources of a single server(Add more CPU, RAM, Disk, or GPU).
 
 # what schema in Database

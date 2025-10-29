@@ -26,8 +26,8 @@ agent can do anything in over system
 
 Agentic AI not Just answering one question but they tacking action ,making decision and interacting with tools or environment to achive a gole 
 
-LLm + Tools + Prompt = Agent
-
+LLm + Tools + Memory +Prompt = Agent
+    
 ### what do you mean of tools?
 
     so basically devloper are devlop a many tools for specific gools and interact and bind with LLM
