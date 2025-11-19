@@ -44,20 +44,38 @@ But here is one problem for limitation token size(llm token windows size)  below
 
 # RAG Small Pipline Exmple with manage Token limitation with chunks
 
-'''bash
 path : ![Alt text](.Langchain\img\RAG_small_pipline.png)
+ 
+This pipline Help to understand HOW RAG techniques is work
 
-# Magic Code
+# Magic Code 🧠
 
-Here above available define RAG structur and small pipline
+Here above available define RAG structur and RAG small pipline
 
     Structur : [Data source] --> [LLM generate] --> chat
 
     What exactly do here between Data source and LLM response
 
----
-**Maintained by [Your Name](https://github.com/yourname)**  
+Here available a Image
+
+```bash
+title : RAG How to hendle base DATA
+path : GenAI-> img->02_image number 🧠  
+```
+## Understand this Image 🧠:
+- *1. Indexing/ ingestion*
+    - when upload and give user owne base Knowledge when conver into chunk range(100,200,500) according model capacity(Token Windows) in vector databse
+
+    - ingestion process run only one time when user gives any kind of data , no required to process every time with user data becuse they alredy stord in vector DB
+
+    - User data first convert into text like pdf ->text ,image->OCR, CSV -> text.
+
+- *2. retrival(RAG)* 
+    - get user query convert into vector and match(search) vecto in vector db (user vector == db vector) then db send response while DB response and User query send to LLM model this LLM model create human like answer using Base knowledge.
+
+    user query ->convert into vector -> serch same vector in vector DB -> DB send response -> send to llm query and DB response -> LLM Create Human like response -> send all answer to User. 
+
+**NOTE : [SOTA]: State of the art (clude soneate,GPT,gemini ,lama)**
 
 
-##  NOTE : [SOTA]: State of the art (clude soneate,GPT,gemini ,lama)
 
