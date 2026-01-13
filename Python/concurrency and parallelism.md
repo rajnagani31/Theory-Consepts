@@ -18,6 +18,9 @@ Doing many tasks at once by quickly switching between them, so each task gets so
 
 # parallelism 
 
+Parallelism in programming is a technique where a large task is broken into smaller subtasks that run simultaneously on multiple processors (like CPU cores or GPUs) to achieve faster computation, ideal for data-heavy tasks like simulations or graphics. 
+
+<br>
 Doing many tasks at the exact same time, using multiple processors or CPU cores.
 
 - they work with all task bu one by one
