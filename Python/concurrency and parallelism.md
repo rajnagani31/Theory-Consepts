@@ -23,7 +23,7 @@ Parallelism in programming is a technique where a large task is broken into smal
 <br>
 Doing many tasks at the exact same time, using multiple processors or CPU cores.
 
-- they work with all task bu one by one
+- they work with all task by one by one
 
 - Many tasks, truly at once, on multiple CPUs (good for CPU: math/processing).
 
