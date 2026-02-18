@@ -23,9 +23,9 @@ Client
 
 # why middleware is used
 
-Authentication / Authorization
+Authentication(who you are) / Authorization(what you can do)
 
-Rate limiting (like your Redis example)
+Rate limiting (like your Redis example) (limt for any system access)
 
 Logging requests & responses
 
@@ -57,6 +57,10 @@ Runs before the view(main logic)
 
 ```bash
 Client → Request Middleware → View → Client
+
+Diraction -> if you have 4 middleware so, that work on disending
+
+4->3->2->1 
 ```
 
 NOTE : 👉 Request middleware NEVER runs after the view
@@ -103,13 +107,12 @@ Middleware =[
 
 -> Request flow
 
-- A → B → C → View
+- View → C → B → A
 
 -> Response flow
 
-- View → C → B → A
-
-⚠️ Response middleware runs in reverse order
+- A → B → C → View
+⚠️ Request middleware runs in reverse order
 ```
 
 #### Middleware has TWO PHASES
@@ -211,4 +214,18 @@ app.add_middleware(StoreUserRequestMiddleware)
 
 django deccler in settings.py file
 
-# same logic and consept use bot fream work
+# same logic and consept use both fream work
+```
+
+# 🔑 Key rule (this explains everything)
+
+```bash
+FastAPI executes middleware in REVERSE order of how they are added/declared.
+
+# There are two ways you’re adding middleware:
+
+-> @app.middleware("http") → added immediately
+
+-> app.add_middleware(...) → added last
+
+FastAPI builds a stack (LIFO — last in, first out).
